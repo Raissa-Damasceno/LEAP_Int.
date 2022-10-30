@@ -1,0 +1,170 @@
+*{
+    font-family: 'Nunito Sans';
+}
+
+body{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "logo logo nav nav register register" 
+                         "headertext headertext headertext headerimg headerimg headerimg"  
+                         "cardtitle cardtitle cardtitle cardtitle cardtitle cardtitle"
+                         "card card card card card card"
+                         "sharetext sharetext sharetext shareimg shareimg shareimg"
+                         "signimg signimg signimg signtext signtext signtext"
+                         "footer footer footer footer footer footer";    
+}
+.grid-1-logo{
+    grid-area: logo;
+    background-color: #0A49AF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.navbar-logo img{
+    width: 218px;
+}
+.grid-2-nav{
+    grid-area: nav;
+    background-color: #0A49AF;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.grid-3-register{
+    grid-area: register;
+    background-color: #0A49AF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{ 
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+}
+button{
+    background-color: #2AB7FD;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+.grid-4-header{
+    grid-area: headertext;
+    background-color: #0A49AF;
+}
+.description-header{
+    padding: 70px;
+}
+.description-header h1{
+    color: white;
+} 
+.description-header p{
+    color: white;
+} 
+.grid-5-header{
+    grid-area: headerimg;
+    background-color: #0A49AF;
+} 
+.grid-5-header img{
+    width: 100%;
+} 
+.grid-6-card-title{
+    grid-area: cardtitle;
+    text-align: center;
+    margin-top: 20px;
+    color: #0A49AF
+}
+.grid-6-card{
+    grid-area: card;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px #00000026;
+    width: 80%;
+    width: 330px;
+    margin: 10px 0 50px 0;
+}
+.card img{
+    width: 100%;
+    max-width: 100%;
+}
+.card .text-card{
+    padding: 20px;
+}
+.card .title-card{
+    color: #0A49AF;
+    font-weight: bold;
+}
+.grid-7-share{
+    grid-area: sharetext;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F7F8;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+.sharing-text{
+    padding: 70px;
+    
+}
+.sharing-text h1{
+    color: #0A49AF
+}
+.grid-8-share{
+    grid-area: shareimg;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F7F8;
+    margin-bottom: 30px;
+}
+
+.grid-9-sign{
+    grid-area: signimg;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-10-sign{
+    grid-area: signtext;
+    width: 100%;
+    background-color: white;
+}
+.grid-10-sign h1{
+    color: #0A49AF
+}
+.sign-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+}
+.grid-11-footer{
+    grid-area: footer;
+    width: 100%;
+    background-color: #0A49AF;
+    height: 100px;
+}
